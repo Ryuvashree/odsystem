@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home - MY College{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="width-100">
+    </div>
+
+<div class="slider-container">
+    <div>
+        <h1 class="welcome-text">Welcome to MY College</h1>
+        <h3 class="subtext">An investment in knowledge pays the best interest.</h3>
+        <p>Welcome to MY College, a prestigious institution dedicated to fostering academic excellence and personal growth. 
+    
+        Our diverse and inclusive community offers a wide range of programs designed to equip students with the knowledge and skills necessary to succeed in a rapidly changing world. 
+        
+        With state-of-the-art facilities, cutting-edge research opportunities, and a vibrant campus life, we provide an environment that encourages innovation, critical thinking, and lifelong learning.
+
+        At our college, we believe in the transformative power of education. 
+       </p>
+   </div>
+</div>
+
+    <div class="news-events-container">
+        <div class="column">
+            <div class="event">
+                <h2 class="heading">Campus News</h2>
+                <div class="marquee-container">
+                    <marquee direction="up" scrollamount="3" class="marquee-content">
+                        <ul>
+                            <li>University research team publishes groundbreaking study on climate change.</li>
+                            <li>Annual cultural fest to be held virtually this year due to health guidelines.</li>
+                            <li>Campus dining services to introduce new sustainable food options starting next semester.</li>
+                            <li>Professor Jane Doe receives national award for excellence in teaching.</li>
+                            <li>New student center construction to be completed by end of the year.</li>
+                            <li>University launches new online course platform to enhance remote learning.</li>
+                            <li>Alumni association announces new scholarship program for underprivileged students.</li>
+                        </ul>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="event">
+                <h2 class="heading">Events</h2>
+                <div class="marquee-container">
+                    <marquee direction="up" scrollamount="3" class="marquee-content">
+                        <ul>
+                            <li>Virtual Career Fair on July 15th - Register Now!</li>
+                            <li>Guest Lecture: Innovations in Artificial Intelligence - August 5th.</li>
+                            <li>Art Exhibition: Student Works - July 20th to August 10th.</li>
+                            <li>Workshop: Financial Planning for Young Professionals - July 25th.</li>
+                            <li>Annual Sports Meet - August 25th to August 30th.</li>
+                            <li>Webinar on Mental Health Awareness - August 12th.</li>
+                            <li>Blood Donation Camp - July 30th at the University Health Center.</li>
+                        </ul>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="event">
+                <h2 class="heading">College News</h2>
+                <div class="marquee-container">
+                    <marquee direction="up" scrollamount="3" class="marquee-content">
+                        <ul>
+                            <li>Exam schedule for the fall semester has been released.</li>
+                            <li>Library hours extended for exam preparation - Open till midnight.</li>
+                            <li>New parking regulations effective from next month - Check university website for details.</li>
+                            <li>Student Council elections to be held on September 1st.</li>
+                            <li>Submission deadline for research papers extended to July 31st.</li>
+                            <li>COVID-19 vaccination drive on campus - August 1st to August 5th.</li>
+                            <li>Maintenance work in the hostel area - Expect water supply interruptions on July 25th.</li>
+                        </ul>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="width-100 margin-top-50">
+   <div class="container">
+      <h3 class="recruiter-head-style">Top Recruiters Company</h3>
+      <marquee class="recruiter-marquee">
+        <img src="{% static 'main/images/rec1.jpg' %}">
+        <img src="{% static 'main/images/rec2.jpg' %}">
+        <img src="{% static 'main/images/rec3.jpg' %}">
+        <img src="{% static 'main/images/rec4.jpg' %}">
+        <img src="{% static 'main/images/rec5.jpg' %}">
+        <img src="{% static 'main/images/rec6.jpg' %}">
+        <img src="{% static 'main/images/rec7.jpg' %}">
+        <img src="{% static 'main/images/rec8.jpg' %}">
+        <img src="{% static 'main/images/rec9.jpg' %}">
+        <img src="{% static 'main/images/rec10.jpg' %}">
+
+      </marquee>
+   </div>
+</div>
+
+{% endblock %}

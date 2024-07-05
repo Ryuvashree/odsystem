@@ -1,0 +1,343 @@
+/* Reset default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content area */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    color: #0056b3;
+}
+
+/* Section headings */
+.heading {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+/* Slider container styling */
+
+/*news*/
+.column {
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+}
+
+.news-events-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.event {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+}
+.heading {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+/* Marquee style */
+.marquee-container {
+    height: 400px;
+    overflow: hidden;
+}
+.marquee-content{
+    height: 100%;
+    color: #ccc;
+}
+
+.marquee-content ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.marquee-content ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        margin-right: 0;
+    }
+    .news-events-container {
+        flex-direction: column;
+    }
+    
+    .about-us {
+        padding: 10px;
+    }
+    .container {
+        padding: 10px;
+    }
+
+    .course-title {
+        font-size: 1.5em;
+    }
+
+    .course-info {
+        padding: 10px;
+    }
+}
+
+/* Welcome text styles */
+.welcome-text {
+    text-align: center;
+    color: #0056b3;
+}
+
+.subtext {
+    text-align: center;
+    color: #003366;
+}
+
+/********** Recruiter List Starts **********/  
+.recruiter-head-style{
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+.recruiter-marquee{
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+}
+.recruiter-marquee img{
+    height:50px;
+    border-radius: 5px;
+}
+/********** Recruiter List Ends **********/
+
+/* About Us section */
+.about-us {
+    max-width: 800px;
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    background-color: #fff; /* White background for main content */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center; /* Center align text */
+}
+
+/* Contact page styles */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: left; /* Left align text */
+}
+
+.contact-details {
+    margin: 20px 0;
+}
+
+.contact-section {
+    margin-bottom: 20px;
+}
+
+.contact-section b {
+    color: #0056b3; /* Blue color for section titles */
+}
+
+.contact-section h4 {
+    color: #003366;
+}
+/* Course section styling */
+.course-section {
+    margin-bottom: 40px;
+}
+
+.course-title {
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #0056b3; /* Underline effect */
+    padding-bottom: 10px;
+}
+
+/* Individual course info styling */
+.course-info {
+    background-color: #e6f2ff; /* Light blue background for course info */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.course-info h3 {
+    color: #003366;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.course-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-info ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark footer background */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Login container */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666; /* Medium gray text */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 12px); /* Adjust width to fit container */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #66afe9; /* Light blue border when focused */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green button */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.od-form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.od-form h2 {
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-group button {
+    background: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background: #4cae4c;
+}

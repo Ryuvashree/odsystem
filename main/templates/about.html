@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - MY College{% endblock %}
+
+{% block content %}
+<div class="main-section about-us">
+<h1 class="about-title">About Us</h1>
+<h2>MY College</h2>
+                <h4>(Affiliated to PYY,Chennai,Approved by SIUAD,Chennai)</h4>
+                <p>Welcome to MY College, where excellence meets opportunity. Nestled in the heart of City, 
+                    MY College is renowned for its commitment to academic rigor, holistic education, and career readiness. 
+                    Our institution prides itself on nurturing the next generation of leaders and innovators through a comprehensive range of programs and resources.
+                    At MY College, we believe in providing more than just education; we empower students with practical knowledge and 
+                    critical thinking skills essential for success in a globalized world. Our dedicated faculty, comprised of industry experts and scholars, 
+                    are committed to delivering quality education and mentoring students to achieve their full potential.
+                    MY College is distinguished by its robust placement support, ensuring that students are well-prepared for the workforce upon graduation. 
+                    With strong industry partnerships and career development programs, we facilitate internships, networking opportunities, 
+                    and career counseling to enhance students' employability.
+
+
+                </p>
+                <p>
+                    Our campus features state-of-the-art infrastructure, including modern classrooms, 
+                    advanced laboratories, and a well-stocked library, providing students with a conducive 
+                    environment for learning and research. For hostellers, we offer comfortable accommodation 
+                    with round-the-clock security, nutritious dining options, and recreational facilities.
+                    Join the MY College community and embark on a transformative educational journey. 
+                    Whether you're pursuing undergraduate or graduate studies, MY College offers a supportive 
+                    and enriching environment where you can thrive academically, professionally, and personally. 
+                    Explore our campus, engage with our vibrant community, and discover 
+                    how MY College can empower you to achieve your dreams.
+                </p>
+
+{% endblock %}
+
+
+
+
+
+
+
+/* Reset default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Default text color */
+}
+
+/* Header styling */
+header {
+    background-color: #3498db; /* Blue header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation menu styling */
+nav {
+    background-color: #333; /* Dark background for navigation */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+}
+
+/* Article section (for the main content of the About page) */
+article {
+    background-color: #fff; /* White background for main content */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark footer background */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive design - adjust as needed */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5em; /* Adjust header font size for smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    article {
+        padding: 10px;
+    }
+}

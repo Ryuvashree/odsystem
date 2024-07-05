@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OD Approval Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+</head>
+<body>
+    <div class="od-form">
+        <h2>OD Approval Form one</h2>
+        <form action="{% url 'submit_od_approval' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student_name" required>
+            </div>
+            <div class="form-group">
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student_id" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+            <div class="form-group">
+                <label for="od-date">OD Date:</label>
+                <input type="date" id="od-date" name="od_date" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for OD:</label>
+                <textarea id="reason" name="reason" required></textarea>
+            </div>
+             <div class="form-group">
+                <label for="manager-approval">HOD Approval:</label>
+                <select id="manager-approval" name="manager_approval" required>
+                    <option value="approved">Approved</option>
+                    <option value="pending">Pending</option>
+                    <option value="rejected">Rejected</option>
+                </select>
+            </div> 
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

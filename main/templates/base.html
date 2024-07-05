@@ -1,0 +1,239 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>{% block title %}MY College{% endblock %}</title>
+    <style>
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #003366;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /********** Logo And Menu Starts **********/  
+.header-menu {
+     position: relative;
+     box-shadow: 0px 2px 5px 0px #00000036;
+}
+/* Logo image styling */
+
+ .main-menu {
+     list-style:none;
+     float:right;
+     margin-top: 20px;
+}
+ .main-menu a {
+     font-weight: 500;
+     color: #3a3a3a;
+     font-size: 20px;
+     text-decoration: none;
+}
+ .main-menu li {
+     float:left;
+     padding:12px 15px;
+}
+/********** Logo And Menu Ends **********/
+        
+        li a:hover {
+            background-color: #111;
+        }
+        .top-header {
+            background: url('{% static "main/images/about.jpg" %}') no-repeat center center fixed;
+            background-size: cover;
+            padding: 50px 0;
+            text-align: center;
+            color: #fff;
+        }
+            
+.top-header {
+     background:#2196f3;
+     padding:5px 0px;
+     border-bottom: 1px solid #3131315e;
+}
+ .news-list {
+     background: #fff;
+     color: red;
+     padding: 6px;
+     font-size: 20px;
+}
+ .headquote {
+     font-size:18px;
+     color:#ffffff;
+     width:80%;
+}
+
+    /* Footer Styles */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 5px 0;
+        text-align: center;
+        font-size: 14px;
+        line-height:1.6;
+        position:fixed;
+        bottom:0;
+        width: 100%;
+        
+    }
+
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width:1200px;
+        margin:0 auto;
+        padding: 0 10px;
+    }
+
+    .footer .width-25 {
+        width: 45%;
+        padding: 0 5px;
+        box-sizing: border-box;
+        margin-border:10px;
+    }
+
+    .footer h2 {
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #fff;
+    }
+
+    .footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer ul li {
+        margin-bottom: 6px;
+    }
+
+    .footer ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer ul li a:hover {
+        color: #fff;
+    }
+
+    .footer address {
+        color: #ccc;
+        font-size: 12px;
+        line-height: 1.4;
+
+    }
+
+    .footer address a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer address a:hover {
+        color: #fff;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .footer .container {
+            flex-direction: column;
+        }
+
+        .footer .width-25 {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+
+
+
+
+            
+    </style>
+</head>
+<body>
+    <header>
+    
+<div class="width-100 top-header">
+   <div class="container">
+      <div class="width-100">
+         <b class="news-list"> NEWS : </b>
+         <marquee class="headquote">
+            My college: Welcome to MY College! Explore our programs and join us for an exciting learning journey.
+         </marquee>
+      </div>
+   </div>
+</div>
+
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'courses' %}">Courses</a></li>
+                <li><a href="{% url 'student' %}">Student</a></li>
+                <li><a href="{% url 'admin' %}">Administration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="height: 1000px; overflow-y: auto;">
+        {% block content %}{% endblock %}
+    </main>
+<footer>
+
+<div class="width-100 margin-top-50 footer">
+   <div class="container">
+      <div class="width-25">
+         <h2 class="quicklink-heading">Quick Links</h2>
+         <ul class="quicklink-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'courses' %}">Courses</a></li>
+            <li><a href="{% url 'student' %}">Student</a></li>
+            <li><a href="{% url 'admin' %}">Administration</a></li>
+         </ul>
+      </div>
+      <div class="width-25">
+         <h2 class="quicklink-heading">MY COLLEGE</h2>
+         <address>
+            <div>MY College Road, Shree Nagar,<br> Hill, Chennai, 2704 567,<br> Tamil Nadu, India</div>
+            <div><i class="fa fa-phone"></i> +91 027 3456 678 - Day</div>
+            <div><i class="fa fa-phone"></i> +91 044 22334556 - Self Support</div>
+            <div><i class="fa fa-envelope"></i> <a href="mailto:query@mycollege.edu.in">query@mycollege.edu.in</a></div>
+            <div><i class="fa fa-envelope"></i> <a href="mailto:placement2024.mycollege@gmail.com">Placement Email ID</a></div>
+        </address>
+      </div>
+   </div>
+</div>
+</footer>
+
+
+</body>
+</html>
